@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import WhatsappIcon from "../../../public/Whatsapp-icon.png";
+import EmailIcon from "../../../public/email-icon.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -51,16 +53,21 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
+          My inbox always open, if you have a question or just want to say Hi, I&apos;ll
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/ibnuadamsy">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/ibnuadamsyah/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
+          <Link href="https://wa.me/6285155447250">
+            <Image src={WhatsappIcon} alt="Whatsapp Icon" />
+          </Link>
+          <Link href="mailto:ibnuadamsyah19@gmail.com">
+            <Image src={EmailIcon} alt="Email Icon" />
           </Link>
         </div>
       </div>
@@ -84,7 +91,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
+                placeholder="joko@gmail.com"
               />
             </div>
             <div className="mb-6">

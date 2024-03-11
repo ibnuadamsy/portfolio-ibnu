@@ -9,12 +9,16 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>Selenium WebDriver</li>
+        <li>Create Test Scenario & Test Case</li>
+        <li>API Testing with Postman</li>
+        <li>TestRail</li>
+        <li>Grafana Loki</li>
+        <li>Python</li>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>GIT</li>
       </ul>
     ),
   },
@@ -23,8 +27,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>University of Muhammadiyah Jakarta - Bachelor of Informatics Engineering</li>
       </ul>
     ),
   },
@@ -33,8 +36,21 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>BNSP - Junior Web Developer</li>
+        <li>Digital Talent Scholarship X Kominfo RI – Junior Web Developer</li>
+        <li>Vocational School Graduate Academy X Kominfo RI – Web Developer</li>
+        <li>Digital Talent Scholarship X Kominfo RI – Junior Web Developer</li>
+        <li>Binar Academy – Quality Assurance</li>
+        <li>Progate - HTML, CSS, Javascript Course</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Award",
+    id: "award",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Outstanding employee of the quarter</li>
       </ul>
     ),
   },
@@ -57,12 +73,10 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          I’m passionate understanding about QA Engineer especially for software testing with implementation of manual & automation. 
+          I have experience as Technical Support and QA Engineer with a demonstrated history of working in the Fintech Company 
+          more than three years. I’m a fast learner and always looking to expand my knowledge also skills. 
+          I’m a team player and enjoy working with others to create amazing applications with a small chance of bug.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -85,6 +99,13 @@ const AboutSection = () => {
             >
               {" "}
               Certifications{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("award")}
+              active={tab === "award"}
+            >
+              {" "}
+              Award{" "}
             </TabButton>
           </div>
           <div className="mt-8">
