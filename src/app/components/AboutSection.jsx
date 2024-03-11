@@ -37,10 +37,10 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>BNSP - Junior Web Developer</li>
-        <li>Digital Talent Scholarship X Kominfo RI/ Junior Web Developer</li>
-        <li>Vocational School Graduate Academy X Kominfo RI / Web Developer</li>
-        <li>Digital Talent Scholarship X Kominfo RI / Junior Web Developer</li>
-        <li>Binar Academy / Quality Assurance</li>
+        <li>Digital Talent Scholarship X Kominfo RI - Junior Web Developer</li>
+        <li>Vocational School Graduate Academy X Kominfo RI - Web Developer</li>
+        <li>Digital Talent Scholarship X Kominfo RI - Junior Web Developer</li>
+        <li>Binar Academy - Quality Assurance</li>
         <li>Progate - HTML, CSS, Javascript Course</li>
       </ul>
     ),
