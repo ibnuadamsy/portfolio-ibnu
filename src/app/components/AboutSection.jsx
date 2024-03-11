@@ -37,10 +37,10 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>BNSP - Junior Web Developer</li>
-        <li>Digital Talent Scholarship X Kominfo RI – Junior Web Developer</li>
-        <li>Vocational School Graduate Academy X Kominfo RI – Web Developer</li>
-        <li>Digital Talent Scholarship X Kominfo RI – Junior Web Developer</li>
-        <li>Binar Academy – Quality Assurance</li>
+        <li>Digital Talent Scholarship X Kominfo RI/ Junior Web Developer</li>
+        <li>Vocational School Graduate Academy X Kominfo RI / Web Developer</li>
+        <li>Digital Talent Scholarship X Kominfo RI / Junior Web Developer</li>
+        <li>Binar Academy / Quality Assurance</li>
         <li>Progate - HTML, CSS, Javascript Course</li>
       </ul>
     ),
@@ -73,10 +73,10 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          I’m passionate understanding about QA Engineer especially for software testing with implementation of manual & automation. 
+          I am passionate understanding about QA Engineer especially for software testing with implementation of manual & automation. 
           I have experience as Technical Support and QA Engineer with a demonstrated history of working in the Fintech Company 
-          more than three years. I’m a fast learner and always looking to expand my knowledge also skills. 
-          I’m a team player and enjoy working with others to create amazing applications with a small chance of bug.
+          more than three years. I am a fast learner and always looking to expand my knowledge also skills. 
+          I am a team player and enjoy working with others to create amazing applications with a small chance of bug.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
