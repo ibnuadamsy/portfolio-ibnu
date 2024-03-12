@@ -10,7 +10,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Selenium WebDriver</li>
-        <li>Create Test Scenario & Test Case</li>
+        <li>Create Test Scenario and Test Case</li>
         <li>API Testing with Postman</li>
         <li>TestRail</li>
         <li>Grafana Loki</li>
@@ -27,7 +27,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>University of Muhammadiyah Jakarta - Bachelor of Informatics Engineering</li>
+        <li>University of Muhammadiyah Jakarta &rarr; Bachelor of Informatics Engineering</li>
       </ul>
     ),
   },
@@ -36,12 +36,12 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>BNSP - Junior Web Developer</li>
-        <li>Digital Talent Scholarship X Kominfo RI - Junior Web Developer</li>
-        <li>Vocational School Graduate Academy X Kominfo RI - Web Developer</li>
-        <li>Digital Talent Scholarship X Kominfo RI - Junior Web Developer</li>
-        <li>Binar Academy - Quality Assurance</li>
-        <li>Progate - HTML, CSS, Javascript Course</li>
+        <li>BNSP &rarr; Junior Web Developer</li>
+        <li>Digital Talent Scholarship X Kominfo RI &rarr; Junior Web Developer</li>
+        <li>Vocational School Graduate Academy X Kominfo RI &rarr; Web Developer</li>
+        <li>Digital Talent Scholarship X Kominfo RI &rarr; Junior Web Developer</li>
+        <li>Binar Academy &rarr; Quality Assurance</li>
+        <li>Progate &rarr; HTML, CSS, Javascript Course</li>
       </ul>
     ),
   },
