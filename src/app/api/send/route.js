@@ -1,3 +1,5 @@
+'use server'
+
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
@@ -9,9 +11,9 @@ export async function POST(req, res) {
   console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
-      from: fromEmail,
-      to: [fromEmail, email],
-      subject: subject,
+      from: 'Contact form <nuibas23@gmail.com>',
+      to: 'ibnuadamsyah19@gmail.com',
+      subject: 'Message from contact form of portfolio.',
       react: (
         <>
           <h1>{subject}</h1>
