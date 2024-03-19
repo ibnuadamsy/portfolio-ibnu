@@ -6,39 +6,29 @@ import WhatsappIcon from "../../../public/Whatsapp-icon.png";
 import EmailIcon from "../../../public/email-icon.png";
 import Link from "next/link";
 import Image from "next/image";
+import emailjs from '@emailjs/browser';
 
-const EmailSection = () => {
+
+export const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  
+  const form = useState();
 
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
+    emailjs.sendForm('service_644t0yx', 'template_iyfmm5d', form.current, {
+        publicKey: 'fL9M4xScJkARf32x0',
+      })
+      .then(
+        () => {
+          console.log("Email Sent Successfully!");
+          setEmailSubmitted(true);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
@@ -72,12 +62,12 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
+      {emailSubmitted ? (
+          <p className="delay-200 duration-100 transform hover:scale-125 transition ease-linear bg-purple-700 px-6 py-2 m-4 inline">
             Email sent successfully!
           </p>
         ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
+          <form className="flex flex-col" ref={form} onSubmit={sendEmail}>
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -131,7 +121,7 @@ const EmailSection = () => {
               Send Message
             </button>
           </form>
-        )}
+       )}
       </div>
     </section>
   );
